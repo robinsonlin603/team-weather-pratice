@@ -1,0 +1,63 @@
+body {
+    margin:0px;
+    font-family: "Noto Sans TC";
+}
+nav{
+    display: grid;
+    top:0;
+    grid-template-columns:auto minmax(300px,1200px) auto;
+    background-color:black;
+    color: white;
+    height:54px;
+    position: sticky;
+    z-index: 4;
+    align-items:center;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color: #CCCCCC;
+}
+.topic_robinson{
+    display:flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-items:center; 
+}
+.logo_robinson{
+    width: 40px;
+    height: 40px;
+}
+.photo{
+    width: 80px;
+    height: 80px;
+}
+main{
+    display: grid;
+    grid-template-columns:auto minmax(300px,1200px) auto;
+    grid-auto-flow: row;
+}
+.megan_container{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.claire_container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.chien_container{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/*footer設定*/
+
+footer{
+    display: flex;
+    background-color: #757575;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height:104px;
+    width: 100%;
+    margin-top: 55px;
+    font-size: 16px;
+}
