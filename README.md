@@ -1,5 +1,6 @@
 1. 命名原則,後面加入_自己的英文名稱 (ex._robinson),避免何必檔案時有重複
-  ![image](https://user-images.githubusercontent.com/93252094/163861282-9d5ccc20-5256-443d-b4bf-a4889c14024f.png)
+  ![image](https://user-images.githubusercontent.com/93252094/163873290-25d6d68b-b0f2-4655-af3c-6151bc3ff7fb.png)
+
 
 2. 字體規格 顏色統一用 #666666 和 black 
    區塊1 文字與圖片大小 
