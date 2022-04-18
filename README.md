@@ -3,13 +3,13 @@
 
 
 2. 字體規格 顏色統一用 #666666 和 black 
-   區塊1 文字與圖片大小 
+   區塊1 文字與圖片大小 寬590px 高 250px
    ![區塊1](https://user-images.githubusercontent.com/93252094/163867409-82c73ee6-face-4967-9254-35a416b51293.png) 
 
-   區塊2 文字與圖片大小
+   區塊2 文字與圖片大小 寬590px 高 200px
    ![區塊2](https://user-images.githubusercontent.com/93252094/163867210-af438323-359c-4d30-a1c8-f988005121e7.png)
 
-   區塊3 文字與圖片大小
+   區塊3 文字與圖片大小 寬590px 高 
   ![區塊3](https://user-images.githubusercontent.com/93252094/163867824-f1aae9cf-f3e7-4bcb-8aca-12d3337ec9da.png) 
 
 3. 目前三個人有自己的 container , 把自己的東西append進去就可以了
