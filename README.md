@@ -11,7 +11,7 @@
    區塊3 文字與圖片大小
   ![區塊3](https://user-images.githubusercontent.com/93252094/163867824-f1aae9cf-f3e7-4bcb-8aca-12d3337ec9da.png) 
 
-3. 目前三個人有自己的 container , 把自己的東西 append進去
+3. 目前三個人有自己的 container , 把自己的東西append進去就可以了
   ![image](https://user-images.githubusercontent.com/93252094/163861670-678edb5a-1964-46d7-a51c-383826ddfe64.png)
   
 4. 圖片標準
