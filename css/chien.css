@@ -1,0 +1,38 @@
+.all_chien{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 590px;
+}
+
+.dateFrame_chien{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 900;
+}
+.nextDate_chien{
+    display: inline-block;
+    font-size: 10px;
+    color: grey;
+}
+.pic_chien{
+    width:34px;
+}
+
+.highLowTemp_chien{
+    font-size: 26px;
+}
+.highLowTemp_chien > span{
+    font-size: 20px;
+}
+
+.rainProb_chien{
+    font-size: 14px;
+}
+.topic_chien{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+}
