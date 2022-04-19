@@ -1,14 +1,13 @@
 fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorization=CWB-06899792-6C35-499A-8E8A-463BE58C275A&locationName=南港區")
 .then(data=>data.json())
 .then(function(taipei){
-    console.log(taipei)
+
     let temp=taipei.records.locations[0].location[0].weatherElement[3].time[0].elementValue[0].value
     let weather=taipei.records.locations[0].location[0].weatherElement[1].time[0].elementValue[0].value
     let feeltemp=taipei.records.locations[0].location[0].weatherElement[2].time[0].elementValue[0].value
     let comfortableindex=taipei.records.locations[0].location[0].weatherElement[5].time[0].elementValue[0].value
     let winddirect=taipei.records.locations[0].location[0].weatherElement[9].time[0].elementValue[0].value
     let windspead=taipei.records.locations[0].location[0].weatherElement[8].time[0].elementValue[0].value
-    console.log(comfortableindex,winddirect,windspead)
     let today= new Date()
     let currentTime=today.getHours()+":"+today.getMinutes()
 

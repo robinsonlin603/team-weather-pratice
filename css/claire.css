@@ -1,0 +1,57 @@
+.claire_all-card-container{
+    margin: 10px;
+    background-color:white; 
+}
+.claire_card-header{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.claire_card-content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.claire_forecat{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.claire_forecat img{
+    width: 62px;
+    height: 62px;
+    margin-right: 20px;
+}
+.claire_temp-container{
+    text-align: center;
+
+}
+.claire_temp-container>.claire_temp{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+}
+.claire_temp-container>.claire_temp>span{
+    color: #878787;
+    font-size: 18px;
+    font-weight: 400;
+}
+.claire_temp-container>.claire_real-feel{
+    font-size: 14px;
+    font-weight: 500;
+   
+}
+.claire_phrase{
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.topic_claire{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+}

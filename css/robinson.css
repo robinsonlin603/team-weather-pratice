@@ -41,17 +41,65 @@ main{
     margin-left: 250px;
 }
 .claire_container{
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: 40px;   
+    margin-top: 50px;   
     margin-left: 250px;
 }
 .chien_container{
     grid-column: 2/3;
     grid-row: 3/4; 
+    margin-top: 50px;
     margin-left: 250px;
 }
-
+@media (max-width:1200px){
+    .megan_container{
+        margin-left: 200px;
+    }
+    .claire_container{  
+        margin-left: 200px;
+    }
+    .chien_container{
+        margin-left: 200px;
+    }
+}
+@media (max-width:900px){
+    .megan_container{
+        margin-left: 50px;
+    }
+    .claire_container{  
+        margin-left: 50px;
+    }
+    .chien_container{
+        margin-left: 50px;
+    }
+}
+@media (max-width:700px){
+    .megan_container{
+        margin-left: 0px;
+    }
+    .claire_container{  
+        margin-left: 0px;
+    }
+    .chien_container{
+        margin-left: 0px;
+    }
+}
+@media (max-width:590px){
+    .claire_container{
+        width:90%;
+    }
+    .all_chien{
+        width:90%;
+    }
+    #all_megan{
+        width:300px;
+    }
+}
 /*footer設定*/
 
 footer{
