@@ -27,7 +27,7 @@ claire_word.push(claire_tomorrow);
 
 
 
-async function data(){
+async function claire_fetch_data(){
     const response=await fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorization=CWB-0BAA84C3-A30C-4090-977D-CF8DD52E28A5');
     const promise=await response.json();
     const result= await promise;
@@ -106,4 +106,4 @@ async function data(){
 
     
 }
-data()
+claire_fetch_data()
