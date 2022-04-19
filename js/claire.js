@@ -31,6 +31,10 @@ async function claire_fetch_data(){
     const response=await fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorization=CWB-0BAA84C3-A30C-4090-977D-CF8DD52E28A5');
     const promise=await response.json();
     const result= await promise;
+    const title_claire=document.createElement('p');
+    title_claire.classList.add('topic_claire');
+    title_claire.innerText="未來天氣狀況： ";
+    claire_part_2.appendChild(title_claire);
 
     let nangangDist=result.records.locations[0].location[0]
     for(let i=2;i<9;i+=6){

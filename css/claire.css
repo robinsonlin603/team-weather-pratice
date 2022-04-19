@@ -1,13 +1,4 @@
-
-.claire_container{
-    width: 590px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
 .claire_all-card-container{
-    border-radius: 5px;
-    border:1px solid rgba(0,0,0,0.3);
     margin: 10px;
     background-color:white; 
 }
@@ -59,10 +50,8 @@
     font-size: 18px;
     text-align: center;
 }
-@media (max-width:590px){
-    .claire_container{
-        width:90%;
-    
-    }
-
+.topic_claire{
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
 }
