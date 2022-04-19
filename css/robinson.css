@@ -33,19 +33,23 @@ nav{
 main{
     display: grid;
     grid-template-columns:auto minmax(300px,1200px) auto;
-    grid-auto-flow: row;
+    grid-auto-flow: row;  
 }
 .megan_container{
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-left: 250px;
 }
 .claire_container{
     grid-column: 2/3;
     grid-row: 2/3;
+    margin-top: 40px;   
+    margin-left: 250px;
 }
 .chien_container{
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 3/4; 
+    margin-left: 250px;
 }
 
 /*footer設定*/

@@ -1,9 +1,14 @@
 fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorization=CWB-06899792-6C35-499A-8E8A-463BE58C275A&locationName=南港區")
 .then(data=>data.json())
 .then(function(taipei){
+    console.log(taipei)
     let temp=taipei.records.locations[0].location[0].weatherElement[3].time[0].elementValue[0].value
     let weather=taipei.records.locations[0].location[0].weatherElement[1].time[0].elementValue[0].value
     let feeltemp=taipei.records.locations[0].location[0].weatherElement[2].time[0].elementValue[0].value
+    let comfortableindex=taipei.records.locations[0].location[0].weatherElement[5].time[0].elementValue[0].value
+    let winddirect=taipei.records.locations[0].location[0].weatherElement[9].time[0].elementValue[0].value
+    let windspead=taipei.records.locations[0].location[0].weatherElement[8].time[0].elementValue[0].value
+    console.log(comfortableindex,winddirect,windspead)
     let today= new Date()
     let currentTime=today.getHours()+":"+today.getMinutes()
 
@@ -33,6 +38,32 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorizati
     cBox.textContent="c"
     wBox.append(imgBox,tempBox,cBox)
 
+    // 風向區塊
+    let windBox = document.createElement('ul')
+    windBox.setAttribute('id','weatherWind_megan')
+    let winddirectli = document.createElement('li')
+    let comfortableindexli = document.createElement('li')
+    let windspeadli = document.createElement('li')
+    let winddirectspan = document.createElement('span')
+    let comfortableindexspan = document.createElement('span')
+    let windspeadspan = document.createElement('span')
+    winddirectli.setAttribute('class','label_megan')
+    winddirectli.textContent = "風：     "
+    comfortableindexli.setAttribute('class','label_megan')
+    comfortableindexli.textContent = "舒適度指數："
+    windspeadli.setAttribute('class','label_megan')
+    windspeadli.textContent = "風速：            "
+    winddirectspan.setAttribute('class','value_megan')
+    winddirectspan.textContent = winddirect
+    comfortableindexspan.setAttribute('class','value_megan')
+    comfortableindexspan.textContent = comfortableindex
+    windspeadspan.setAttribute('class','value_megan')
+    windspeadspan.textContent = windspead+"  公尺/秒"
+    winddirectli.appendChild(winddirectspan)
+    comfortableindexli.appendChild(comfortableindexspan)
+    windspeadli.appendChild(windspeadspan)
+    windBox.append(comfortableindexli,winddirectli,windspeadli)
+
     // 體感溫度
     let feelBox = document.createElement('span')
     feelBox.setAttribute('id','feel_megan')
@@ -43,7 +74,7 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorizati
     desBox.setAttribute('id','weatherDes_megan')
     desBox.textContent=weather
 
-    allmegan.append(title,wBox,feelBox,desBox)
+    allmegan.append(title,wBox,feelBox,desBox,windBox)
 
     let part1 = document.querySelector('.megan_container')
     part1.appendChild(allmegan)

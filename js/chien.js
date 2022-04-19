@@ -22,7 +22,10 @@ function appendWeeklyData(){
 
         let nanGang=data.records.locations[0].location[0]   
         // console.log(nanGang)
-
+        const title_chien=document.createElement('p')
+        title_chien.classList.add('topic_chien')
+        title_chien.innerText="未來一周溫度： "
+        part_3.appendChild(title_chien)
         for(let i=0; i<7; i++){
 
             const all = document.createElement('div')
@@ -77,10 +80,9 @@ function appendWeeklyData(){
                 rainProb.innerText= nanGang.weatherElement[0].time[i+2].elementValue[0].value+'%'
             }  
             all.appendChild(rainProb)
-
+            
             part_3.appendChild(all)
             }
-        
 
         }
     )
