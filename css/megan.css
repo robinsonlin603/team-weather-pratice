@@ -82,4 +82,29 @@
     #feel_megan {
         justify-self: start;
     }
+    #weatherBox_megan img{
+        max-width:60px;
+        max-height: 60px;
+    }
+    #temp_megan {
+        font-size: 60px;
+    }
+}
+@media (max-width:400px){
+    #weatherWind_megan {
+        grid-column: 2/4;
+        margin-left: 80px;
+    }
+    #weatherBox_megan{
+        margin-left: 0px;
+    }
+    .label_megan{
+        font-size: 14px;
+    }
+    .value_megan{   
+        font-size: 16px;
+    }
+    #feel_megan{
+        grid-column: 1;
+    }
 }
