@@ -1,7 +1,7 @@
 body {
     margin:0px;
     font-family: "Noto Sans TC";
-    background-image: url("/pic/bj.jpg");
+    background-image: url("../pic/bj.jpg");
 }
 nav{
     display: grid;

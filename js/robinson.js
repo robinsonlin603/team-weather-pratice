@@ -22,7 +22,7 @@ function navBarRender(){
     inputButton_robinson.setAttribute("onclick","getKeyword()")
 
     let inputButtonImg_robinson = document.createElement("img")
-    inputButtonImg_robinson.src = "/pic/icon_search.png"
+    inputButtonImg_robinson.src = "pic/icon_search.png"
 
     inputButton_robinson.appendChild(inputButtonImg_robinson)
     searchBox_robinson.append(inputBox_robinson,inputButton_robinson)
