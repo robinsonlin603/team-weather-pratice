@@ -37,13 +37,7 @@
     color: #666666;
 }
 @media (max-width:590px){
-    .claire_container{
-        width:90%;
-    }
     .all_chien{
-        width:90%;
-    }
-    #all_megan{
         width:90%;
     }
 }
