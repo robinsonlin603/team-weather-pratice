@@ -73,6 +73,9 @@ main{
     .chien_container{
         margin-left: 200px;
     }
+    .topic_robinson{
+        margin-left: 10px;
+    }
 }
 @media (max-width:900px){
     .megan_container{
