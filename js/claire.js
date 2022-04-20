@@ -4,10 +4,10 @@ const claire_now=new Date();
 const claire_nowHours=claire_now.getHours()
 
 function claire_checkTime(claire_nowHours){
-    let addSixhr=claire_nowHours+6;
-    if(addSixhr<=6){
+    
+    if(claire_nowHours<=10){
         return afterSixhr='今早'
-    }else if(addSixhr<=12){
+    }else if(claire_nowHours<=16){
         return afterSixhr='下午'
     }else{
         return afterSixhr='今晚'
@@ -44,14 +44,18 @@ async function claire_fetch_data(){
         const cardHeader=document.createElement('div')
         cardHeader.classList.add('claire_card-header')
         const dateWord=document.createElement('div')
-        if(i===2){
-            dateWord.innerHTML=claire_word[0]
-        }else{
-            dateWord.innerHTML=claire_word[1]
-        }
+      
         
         const sub_title=document.createElement('span')
-        sub_title.innerHTML=(claire_now.getMonth()+1).toString()+'/'+claire_now.getDate().toString()
+        
+        
+        if(i===2){
+            dateWord.innerHTML=claire_word[0]
+            sub_title.innerHTML=(claire_now.getMonth()+1).toString()+'/'+claire_now.getDate().toString()
+        }else{
+            dateWord.innerHTML=claire_word[1]
+            sub_title.innerHTML=(claire_now.getMonth()+1).toString()+'/'+(claire_now.getDate()+1).toString()
+        }
         cardHeader.append(dateWord,sub_title)
         //溫度
         const temp=nangangDist.weatherElement[3].time[i].elementValue[0].value
