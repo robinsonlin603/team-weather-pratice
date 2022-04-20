@@ -27,7 +27,7 @@ claire_word.push(claire_tomorrow);
 
 
 
-async function claire_fetch_data(){
+async function claire_fetch_data(i){
     const response=await fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorization=CWB-0BAA84C3-A30C-4090-977D-CF8DD52E28A5');
     const promise=await response.json();
     const result= await promise;
@@ -36,7 +36,7 @@ async function claire_fetch_data(){
     title_claire.innerText="未來天氣狀況： ";
     claire_part_2.appendChild(title_claire);
 
-    let nangangDist=result.records.locations[0].location[0]
+    let nangangDist=result.records.locations[0].location[i]
     for(let i=2;i<9;i+=6){
         const allcardContainer=document.createElement('div')
         allcardContainer.classList.add('claire_all-card-container')
@@ -114,4 +114,3 @@ async function claire_fetch_data(){
 
     
 }
-claire_fetch_data()

@@ -15,12 +15,12 @@ for(let i=1;i<8;i++){
 //console.log(nextWeekDay)
 //console.log(nextWeekDate)
 
-function appendWeeklyData(){
+function appendWeeklyData(i){
     fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-063?Authorization=CWB-593A953B-72B6-4F7E-9407-D39EC17D8589')
     .then(res => res.json())
     .then(function(data){
 
-        let nanGang=data.records.locations[0].location[0]   
+        let nanGang=data.records.locations[0].location[i]   
         // console.log(nanGang)
         const title_chien=document.createElement('p')
         title_chien.classList.add('topic_chien')
@@ -88,5 +88,3 @@ function appendWeeklyData(){
     )
 }
 
-
-appendWeeklyData();
