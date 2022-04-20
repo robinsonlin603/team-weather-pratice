@@ -17,7 +17,7 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorizati
     // 天氣文字區塊
     let title = document.createElement('p')
     title.setAttribute('id','weatherNow_megan')
-    title.textContent="目前天氣"
+    title.textContent="目前天氣："
     let br = document.createElement('br')
     let time = document.createElement('span')
     time.setAttribute('id','time_megan')
@@ -47,11 +47,11 @@ fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-061?Authorizati
     let comfortableindexspan = document.createElement('span')
     let windspeadspan = document.createElement('span')
     winddirectli.setAttribute('class','label_megan')
-    winddirectli.textContent = "風：     "
+    winddirectli.textContent = "風："+"\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0"
     comfortableindexli.setAttribute('class','label_megan')
-    comfortableindexli.textContent = "舒適度指數："
+    comfortableindexli.textContent = "舒適度："+"\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0   "
     windspeadli.setAttribute('class','label_megan')
-    windspeadli.textContent = "風速：            "
+    windspeadli.textContent = "風速："+"\xa0\xa0\xa0\xa0\xa0"
     winddirectspan.setAttribute('class','value_megan')
     winddirectspan.textContent = winddirect
     comfortableindexspan.setAttribute('class','value_megan')
